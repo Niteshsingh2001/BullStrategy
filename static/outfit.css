@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background-image: url("https://images.pexels.com/photos/9754/mountains-clouds-forest-fog.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.navbar {
+    background: rgba(255, 255, 255, 0.055);
+    box-shadow: 0 8px 32px 0 rgba(161, 161, 161, 0.222);
+    backdrop-filter: blur(1.5px);
+    -webkit-backdrop-filter: blur(1.5px);
+    /* border-radius: 10px; */
+    border: none;
+    /* border: 1px solid rgba(255, 255, 255, 0.18); */
+}
+
+.form-control {
+    border: none;
+}
+
+.btn {
+    width: 150px;
+}
+
+.container {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.row {
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card {
+    margin: 10px;
+    background: rgba(255, 255, 255, 0.055);
+    box-shadow: 0 8px 32px 0 rgba(151, 151, 151, 0.222);
+    backdrop-filter: blur(3.5px);
+    -webkit-backdrop-filter: blur(3.5px);
+    border-radius: 10px;
+    border: none;
+    /* border: 1px solid rgba(255, 255, 255, 0.18); */
+}
+
+.card-title {
+    text-align: center;
+
+}
+
+.card-subtitle {
+    text-align: center;
+
+}
+
+/* --- stocks */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cont2 {
+    width: 79%;
+}
+
+.col {
+    color: rgb(0, 0, 0);
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+
+ 
+
+    body {
+        background-image: url("https://images.pexels.com/photos/7880463/pexels-photo-7880463.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        
+    }
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bull Strategy</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+       
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='outfit.css')}}">
+    
+</head>
+
+<body>
+
+    <nav class="navbar ">
+        <div class="container-fluid">
+            <a href="/" class="navbar-brand">Bull Strategy</a>
+            <form class="d-flex" role="search" action="/stock" method="POST">
+                <input class="form-control me-2" required type="search" placeholder="Search Stock" aria-label="Search" name="stock_name">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <div class="row">
+
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">{{sp["info"]["title"]}}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">{{sp["price"]["last"]["value"]}}</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">{{sp["price"]["last"]["today_change"]}}({{sp["price"]["last"]["today_change_percent"]}})</h6>
+
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title"> 
+                        Dow Jones</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">{{dow["price"]["last"]["value"]}}</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">{{dow["price"]["last"]["today_change"]}}({{dow["price"]["last"]["today_change_percent"]}})</h6>
+
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">{{sensex["info"]["title"]}}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">{{sensex["price"]["last"]["value"]}}</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">{{sensex["price"]["last"]["today_change"]}}({{nifty["price"]["last"]["today_change_percent"]}})</h6>
+
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">{{nifty["info"]["title"]}}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">{{nifty["price"]["last"]["value"]}}</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">{{nifty["price"]["last"]["today_change"]}}({{nifty["price"]["last"]["today_change_percent"]}})</h6>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+ 
+</body>
+
+</html>
