@@ -7,8 +7,8 @@ app = Flask(__name__)
 # API keys  
 
 headers = {
-    	"X-RapidAPI-Host": "google-finance4.p.rapidapi.com",
-    	"X-RapidAPI-Key": "23526dc8a9msh964cba3ac7dbe48p1b0ea7jsn64010cfd717b"
+    	"X-RapidAPI-Host": "host name",
+    	"X-RapidAPI-Key": "API Key"
     }
 
 
